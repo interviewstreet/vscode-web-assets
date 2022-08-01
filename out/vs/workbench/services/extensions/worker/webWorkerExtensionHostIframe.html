@@ -26,7 +26,7 @@
 	}
 
 	try {
-		const worker = new Worker('../../../../base/worker/workerMain.js', { name });
+		const worker = new Worker('https://cdn.jsdelivr.net/gh/interviewstreet/vscode-web-assets@v0.0.3/out/vs/base/worker/workerMain.js', { name });
 		worker.postMessage('vs/workbench/api/worker/extensionHostWorker');
 		const nestedWorkers = new Map();
 
