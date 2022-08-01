@@ -1,0 +1,112 @@
+#hackerrank-external-resources\:widget {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.external-resources {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--vscode-font-family);
+  font-size: var(--vscode-font-size);
+}
+
+.external-resources .search-input {
+  margin-bottom: 0.75rem;
+  padding: 0 10px;
+  height: 30px;
+  color: var(--vscode-input-foreground);
+  background-color: var(--vscode-input-background);
+  border: none;
+}
+
+.external-resources .add-resource-button {
+  margin-bottom: 10px;
+  padding: 7px 10px;
+  font-family: var(--vscode-font-family);
+  font-weight: 700;
+  color: var(--vscode-button-foreground);
+  background-color: var(--vscode-button-background);
+  border: none;
+}
+
+.external-resources .resource-list-container .resource-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 0 2px 5px;
+}
+
+.external-resources .resource-list-container .resource-list-item .resource-url {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: auto;
+  white-space: nowrap;
+}
+
+.external-resources .resource-list-container .resource-list-item .trash-icon {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.external-resources .resource-list-container .resource-list-item .handle {
+  margin-left: 10px;
+  padding: 5px;
+  cursor: grab;
+}
+
+.external-resources
+  .resource-list-container
+  .resource-list-item
+  .trash-icon
+  svg,
+.external-resources .resource-list-container .resource-list-item .handle svg {
+  fill: var(--vscode-foreground);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+

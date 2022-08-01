@@ -1,0 +1,243 @@
+#hackerrank-dependency-manager\:widget {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dependency-manager,
+.dependency-manager select {
+  font-family: var(--vscode-font-family);
+  font-size: var(--vscode-font-size);
+}
+
+.dependency-manager {
+  width: 100%;
+  height: 100%;
+}
+
+.placeholder {
+  overflow: auto;
+  height: calc(100% - 45px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dependency-manager .placeholder-pane {
+  text-align: center;
+  max-height: 100%;
+}
+
+.dependency-manager .placeholder-pane svg {
+  zoom: 1.5;
+}
+
+.dependency-manager .placeholder-pane .no-dependency-found-text {
+  padding: 1rem 1.5rem;
+  opacity: 0.7;
+  z-index: -1;
+  margin: 0 10%;
+}
+
+.dependency-manager .search-section {
+  padding: 15px 15px 5px 15px;
+  width: auto;
+}
+
+.dependency-manager .search-section .search-input {
+  width: 100%;
+  height: 30px;
+  padding: 0px 10px;
+  color: var(--vscode-input-foreground);
+  background-color: var(--vscode-input-background);
+  border: none;
+}
+
+.dependency-manager .search-section .search-input::placeholder {
+  color: var(--vscode-input-placeholderForeground);
+}
+
+.dependency-manager .search-section .fa-search {
+  display: inline;
+}
+
+.dependency-manager .search-section .search-results-container {
+  position: relative;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.dependency-manager .search-section:focus-within .search-results-container {
+  visibility: visible;
+}
+
+.dependency-manager
+  .search-section
+  .search-results-container
+  .search-results-list {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  background: var(--vscode-menu-background);
+  box-shadow: 0px 1px 6px var(--vscode-widget-shadow);
+}
+
+.dependency-manager
+  .search-section
+  .search-results-container
+  .search-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--vscode-foreground);
+}
+
+.dependency-manager
+  .search-section
+  .search-results-container
+  .search-result-item:hover,
+.dependency-manager
+  .search-section
+  .search-results-container
+  .search-result-item:focus {
+  color: var(--vscode-menu-selectionForeground);
+  background-color: var(--vscode-menu-selectionBackground);
+  cursor: pointer;
+  outline: none;
+}
+
+.dependency-manager
+  .search-section
+  .search-results-container
+  .search-result-item:first-child {
+  margin-top: 8px;
+}
+
+.dependency-manager
+  .search-section
+  .search-results-container
+  .search-result-item:last-child {
+  margin-bottom: 8px;
+}
+
+.dependency-manager
+  .search-section
+  .search-results-container
+  .search-result-item
+  .add {
+  margin-left: auto;
+  color: #40c1e8;
+}
+
+.dependency-manager .installed-dependency-list {
+  overflow: auto;
+  height: calc(100% - 45px);
+}
+
+.dependency-manager .installed-dependency-list .list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 15px 2px 20px;
+}
+
+.dependency-manager .installed-dependency-list .list-item .package-name,
+.search-section .search-results-container .search-result-item .package-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.dependency-manager .installed-dependency-list .list-item .package-name {
+  margin-right: 10px;
+}
+
+.dependency-manager .installed-dependency-list .list-item .package-version {
+  text-align: end;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  width: 25%;
+  min-width: 80px;
+  padding: 5px;
+  cursor: pointer;
+  color: var(--vscode-foreground);
+}
+
+.dependency-manager
+  .installed-dependency-list
+  .list-item
+  .package-version:hover,
+.dependency-manager
+  .installed-dependency-list
+  .list-item
+  .package-version:focus {
+  background-color: var(--vscode-list-hoverBackground);
+}
+
+.dependency-manager
+  .installed-dependency-list
+  .list-item
+  .package-version.cursor-wait {
+  cursor: wait;
+}
+
+.dependency-manager .installed-dependency-list .list-item .trash-icon {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none !important;
+}
+
+.dependency-manager .installed-dependency-list .list-item .trash-icon svg {
+  fill: var(--vscode-foreground);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+

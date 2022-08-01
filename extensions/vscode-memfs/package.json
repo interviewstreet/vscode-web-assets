@@ -1,0 +1,1 @@
+{"name":"vscode-memfs","displayName":"vscode-memfs","description":"","version":"0.0.1","engines":{"vscode":"^1.60.0"},"categories":["Other"],"activationEvents":["onFileSystem:memfs","onDebug"],"publisher":"hackerrank","browser":"./dist/extension.js"}
